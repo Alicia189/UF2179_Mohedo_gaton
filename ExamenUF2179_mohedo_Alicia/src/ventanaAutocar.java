@@ -13,6 +13,7 @@ import javax.swing.SpinnerNumberModel;
 import javax.swing.JButton;
 import javax.swing.JTextArea;
 import java.awt.Font;
+import java.util.ArrayList;
 
 public class ventanaAutocar extends JFrame {
 
@@ -23,6 +24,7 @@ public class ventanaAutocar extends JFrame {
 	private JTextField textmodelo;
 	private JButton btnNewButton;
 	private JButton btnNewButton_1;
+	private ArrayList<Autocares1>Autocares1;
 
 	/**
 	 * Launch the application.
@@ -43,12 +45,14 @@ public class ventanaAutocar extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public ventanaAutocar() 
+	public ventanaAutocar() {
+		Autocares1 = new ArrayList <Autocares1>();
+		
 	
 	
 	
 	
-	{
+	
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
